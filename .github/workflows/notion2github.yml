@@ -19,7 +19,7 @@ jobs:
       - name: Notion2Github
         uses: narkdown/notion2github@v1.1.1
         with:
-          database-url: 'https://www.notion.so/insoo-til/a64b64402b1f4a08ac9ca80b983f01f8?v=09b3395d9e0048f49ec8cc5e33ba73fb'
+          database-url: 'https://www.notion.so/insoo-til/a64b64402b1f4a08ac9ca80b983f01f8'
           docs-directory: docs
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
