@@ -1,0 +1,33 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Notion2Github
+on:
+  push:
+    branches:
+      - 'main'
+  schedule:
+    - cron: '0 14 * * *'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  auto-sync-from-notion-to-github:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Notion2Github
+        uses: narkdown/notion2github@v1.1.1
+        with:
+          database-url: 'https://www.notion.so/insoo-til/a64b64402b1f4a08ac9ca80b983f01f8?v=09b3395d9e0048f49ec8cc5e33ba73fb'
+          docs-directory: docs
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+
+      - name: Format documents
+        uses: creyD/prettier_action@v3.1
+        with:
+          prettier_options: --write ./docs/**/*.md
+          commit_message: 'docs: Update docs (auto)'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
