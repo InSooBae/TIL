@@ -30,4 +30,4 @@ jobs:
           prettier_options: --write ./docs/**/*.md
           commit_message: 'docs: Update docs (auto)'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.NOTION_GITHUB }}
