@@ -1,7 +1,10 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Notion2Github
+name: notion
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: '0 14 * * *'
 
@@ -16,7 +19,7 @@ jobs:
       - name: Notion2Github
         uses: narkdown/notion2github@v1.1.1
         with:
-          database-url: 'https://www.notion.so/acc3dfd0339e4cacb5baae8673fddfad'
+          database-url: 'https://younho9.notion.site/younho9/acc3dfd0339e4cacb5baae8673fddfad?v=be43c1c8dd644cfb9df9efd97d8af60a'
           docs-directory: docs
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
