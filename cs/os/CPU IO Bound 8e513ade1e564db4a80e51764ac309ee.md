@@ -31,7 +31,8 @@ Status: 🛠 In Progress
 
 ## CPU 버스트 길이에 따른 빈도
 
-![Untitled](CPU%20IO%20Bound%208e513ade1e564db4a80e51764ac309ee/Untitled.png)
+
+![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/12d75dca-e7f7-4f55-9ba3-8cf5f51cd7b3/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221107%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221107T165903Z&X-Amz-Expires=86400&X-Amz-Signature=492a176341281255939d2838f62aa22f75d7d85a94b1ecf2248625ea6c43f1be&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject)
 
 버스트의 지속시간에 따른 빈도 수가 0~8ms에 끝나는 것을 볼 수 있다.
 
