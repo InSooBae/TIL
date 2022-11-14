@@ -1,7 +1,7 @@
 # CPU | IO Bound
 
 Created Time: October 14, 2022 11:27 PM
-Status: 🛠 In Progress
+Status: ✅ Completed
 
 ## CPU (Central Processing Unit)
 
